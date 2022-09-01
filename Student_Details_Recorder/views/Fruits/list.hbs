@@ -1,0 +1,40 @@
+{{viewTitle}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+  <h1 style="color: white;text-align: center;">Student Details</h1>
+<body style="background-color: black;">
+      
+         
+        
+             {{#each data}}
+             <div style="    background-color: #27e2bc;text-align: center;border-radius: 41px;padding: 14px;margin: 22px;">
+            {{this.fullname}} </Br>
+            {{this.email}} </Br>
+            {{this.mobile}} </Br>
+            {{this.City}} </Br>
+             <div>
+            <a  href="/edit/{{this._id}}"><span class="glyphicon" >&#x270f;</span></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+            <a href="/delete/{{this._id}}"> <span class="glyphicon">&#xe020;</span></a>
+            </div>
+            
+             
+            
+            </div>
+            </Br>
+             {{/each}}
+       
+       
+      
+      </Br>
+    <a href="/">
+        <button style="margin-left: 37%;background-color: #003e0f;color: white;}">ADD NEW</button>
+    </a>
+</body>
+</html>

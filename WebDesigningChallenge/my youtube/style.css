@@ -1,0 +1,579 @@
+.main{
+    background-color: #131212;
+    width: 100%;
+    height: 100%;
+}
+
+.box1{
+    background-color: red;
+    height: 29px;
+    width: 40px;
+    border-radius: 7px;
+    margin-left: 79px;
+    
+}
+
+.box2{
+    position: absolute;
+    height: 10px;
+    width: 16px;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    margin-top: 6px;
+
+}
+.box3{
+    position: absolute;
+    background-color: red;
+    height: 25px;
+    width: 14px;
+    margin-left: 2px;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+.mini{
+    background-color: red;
+    height: 8px;
+    width: 9px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.maintop1{
+    background-color: #181819;
+    height: 49px;
+    width: 10%;
+    padding-top: 42px;
+    float:left;
+}
+
+.maintop2{
+    background-color: #181819;
+    height: 49px;
+    width: 18%;
+    float:left;
+    padding-top: 42px;
+}
+
+.maintop3{
+    background-color: #181819;
+    height: 37px;
+    width: 66%;
+    float:left;
+    padding-top: 54px;
+}
+
+.searchbutton{
+    margin-top: 19px;
+    position: absolute;
+    height: 38px;
+    background: #67595957;
+    color: white;
+    border-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-right-color: white;
+    margin-left: 491px;
+}
+
+
+
+
+body{
+    margin: 0%;
+}
+
+.youtube{
+    margin-left: -27px;
+        color: white;
+        font-size: 26px;
+        font-family: unset;
+        font-weight: 800;
+}
+
+.search{
+    margin-top: -30px;
+        height: 40px;
+        padding-top: 14px;
+        width: 677px;
+        background: #07070780;
+        border-color: #07070780;
+        margin-left: -57px;
+        color: white;
+    font-size: 19px;
+
+}
+
+.videos{
+    width:"300px" ;
+    height:"200px";
+}
+
+.subtitle1{
+        color: white;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin-left: 125px;
+        
+}
+
+.subtitle2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 42px;
+}
+
+.subtitle3{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 32px;
+    margin-top: 15px;
+}
+
+.subtitle4{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 88px;
+    margin-top: -52px;
+
+}
+
+.subtitle5{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: -716px;
+    
+
+}
+
+.subtitle6{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 51px;
+}
+
+.subtitle7{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left:34px;
+    margin-top: 25px;
+}
+
+.subtitle8{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 89px;
+    margin-top: -60px;
+
+}
+
+.row1video1{
+    width: 31%;
+    float: left;
+}
+
+.row1video2{
+    width: 25%;
+    float: left;
+}
+
+.row1video3{
+    width: 20%;
+    float: left;
+   
+}
+
+.row1video4{
+    width: 24%;
+    float: left;
+}
+
+.row2video1{
+    width: 31%;
+    float: left;
+}
+
+.row2video2{
+    width: 25%;
+    float: left;
+    float: right;
+    margin-top: -328px;
+    margin-right: -57px;
+}
+
+.row2video3{
+    width: 20%;
+    float: left;
+    margin-top: -330px;
+    margin-left: 862px;
+}
+
+.row2video4{
+    width: 24%;
+    float: left;
+    margin-left: 433px;
+    margin-top: -335px;
+}
+
+.buttonbar{
+    width: 100%;
+    height: 160px;
+    background-color: #181819;
+}
+
+.all{
+    margin-left: 92px;
+    margin-top: 12px;
+    border-radius: 23px;
+    border-color: #131212;
+    width: 47px;height: 38px;
+}
+
+.computerscience{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+}
+.computerscience:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.mixes{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 60px;
+
+}
+
+.mixes:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.computerprogram{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 140px;
+}
+
+.computerprogram:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.music{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 69px;
+}
+
+.music:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.motivation{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 90px;
+}
+
+.motivation:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.woodworking{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 110px;
+}
+
+.woodworking:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.moneyheist{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 110px;
+}
+
+.moneyheist:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.thrillers{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 75px;
+}
+
+.thrillers:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.scene{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 72px;
+}
+
+.scene:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.inventions{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 84px;
+}
+
+.inventions:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.lifehacks{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 84px;
+}
+
+.lifehacks:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.baking{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 84px;
+}
+
+.baking:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+
+.filmi{
+    border-radius: 23px;
+    height: 37px;
+    margin-left: 5px;
+    background-color: #312b30;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    width: 84px;
+}
+
+.filmi:hover{
+    background-color: rgba(71, 70, 70, 0.822);
+}
+.crossroads{
+    height: 47px;
+    width: 45px;
+    border-radius: 50px;
+    margin-left: -286px;
+    margin-bottom: -65px;
+}
+
+.soothing{
+    width: 41px;
+    height: 41px;
+    border-radius: 50px;
+    margin-bottom: -58px;
+    margin-left: -274px;
+}
+
+.arunpradeep3{
+    width: 41px;
+    height: 41px;
+    border-radius: 40px;
+    margin-bottom: -58px;
+    margin-left: -271px;
+}
+
+.arunpradeep4{
+    width: 41px;
+        height: 41px;
+        border-radius: 50px;
+        margin-left: 36px;
+        margin-top: 18px;
+}
+
+.diy{
+    width: 41px;
+    height: 41px;
+    border-radius: 50px;      
+    margin-bottom: -70px;
+    margin-left: -272px;
+}
+
+.destiny{
+        height: 41px;
+        width: 41px;
+        border-radius: 50px;
+        margin-bottom: -68px;
+        margin-left: -622px;
+        
+       
+}
+
+.learnfrombase{
+    height: 41px;
+    width: 41px;
+    border-radius: 50px;
+    margin-left: -656px;
+    margin-bottom: -68px;
+}
+
+.mojo{
+    height: 41px;
+    width: 41px;
+    border-radius: 50px;
+    margin-left: 764px;
+    margin-top: 35px;
+}
+
+.home{
+    float: left;
+    margin-left: -795px;
+    margin-top: -470px;
+    width: 65px;
+    height: 45px;
+    font-size: 10px;
+    background: #6456568c;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.subscriptions{
+    margin-left: -1517px;
+    margin-top: 188px;
+    width: 65px;
+    height: 45px;
+    font-size: 10px;
+    background: #6456568c;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.notifications{
+    margin-top: 239px;
+        position: absolute;
+        width: 65px;
+        height: 45px;
+        font-size: 10px;
+        margin-left: 2px;
+        background: #6456568c;
+        color: white;
+        border-width: 1px;
+        border-color: white;
+        font-weight: bold;
+        border-radius: 5px;
+}
+
+.library{
+    margin-top: 291px;
+        position: absolute;
+        height: 45px;
+        width: 65px;
+        margin-left: 2px;
+        font-size: 10px;
+        background: #6456568c;
+        color: white;
+        border-width: 1px;
+        border-color: white;
+        font-weight: bold;
+        border-radius: 5px;
+}
+
+.explore{
+    position: absolute;
+    margin-top: 343px;
+    height: 45px;
+    width: 65px;
+    margin-left: 2px;
+    font-size: 10px;
+    background: #6456568c;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.new1{
+    border-width: 1px;
+    border-color: #565353;
+}

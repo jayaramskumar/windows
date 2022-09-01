@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Jayaram-s-kumar/RandomQuotes/static/css/main.f7eddc0f.css",
+    "main.js": "/Jayaram-s-kumar/RandomQuotes/static/js/main.6baa059e.js",
+    "static/js/787.20520003.chunk.js": "/Jayaram-s-kumar/RandomQuotes/static/js/787.20520003.chunk.js",
+    "static/media/logo.svg": "/Jayaram-s-kumar/RandomQuotes/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Jayaram-s-kumar/RandomQuotes/index.html",
+    "main.f7eddc0f.css.map": "/Jayaram-s-kumar/RandomQuotes/static/css/main.f7eddc0f.css.map",
+    "main.6baa059e.js.map": "/Jayaram-s-kumar/RandomQuotes/static/js/main.6baa059e.js.map",
+    "787.20520003.chunk.js.map": "/Jayaram-s-kumar/RandomQuotes/static/js/787.20520003.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7eddc0f.css",
+    "static/js/main.6baa059e.js"
+  ]
+}

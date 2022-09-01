@@ -1,0 +1,26 @@
+const moogoose = require("mongoose")
+const uri="mongodb+srv://Jayaram123:121144169@cluster0.lhhlu.mongodb.net/Cluster0?retryWrites=true&w=majority"
+moogoose.connect(uri)
+console.log("Database connection succeed")
+
+const DetailsSchema = moogoose.Schema({
+    fullname:{
+        type:String,
+        reqired:true
+
+    },
+    email:{
+        type:String,
+        reqired:true
+    },
+    mobile:{
+        type:String,
+        reqired:true
+    },
+    City:{
+        type:String,
+        reqired:true
+    }
+})
+
+moogoose.model("Detail",DetailsSchema)

@@ -1,0 +1,81 @@
+.header{
+    background-color: #3b5998;
+    width: 100%;
+    height: 98px;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 30%;
+    padding-top: 30px;   
+    float: left; 
+}
+
+.logo-text{
+    color: white;
+    text-decoration: none;
+    margin-left: -292px;
+    font-size: 44px;
+}
+body{
+    margin: 0px;
+}
+  
+.login{
+    
+    width: 50%;
+    float: left;
+}
+.login label{
+    color: white;
+    font-size: 13px;
+
+}
+.table{
+    margin-left: 444px;
+    margin-top: 28px;
+}
+.forgotten{
+    font-size: 13px;
+    color: #9cb4d8;
+}
+.button{
+    background: #4267b2;
+    color: white;
+    border-color: #29487d;
+    height: 25px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(245, 74, 7);
+}
+
+.left section{
+    width: 50%;
+    float: left;
+}
+
+.right section{
+    width: 50%;
+    float: left;
+}
+
+.main-body{
+    background: linear-gradient(white,#D3D8E8);
+    width: 100%;
+    height: 655px;
+}
+.image{
+    margin-left: 160px;
+    margin-top: 34px;
+}
+
+.para{
+    margin-left: 158px;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: sans-serif;
+}
+

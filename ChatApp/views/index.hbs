@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/cfc1a82edc.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color:#3fb490;background-image:url(https://i.pinimg.com/originals/8b/7d/c3/8b7dc34ea2ad3ad34b9d38fcbaf12741.jpg);">
+    <div style="text-align:left;" id="scrollDiv">
+        {{# each mesg}}
+        <h3>
+            <div style="background-color:black;border-top-left-radius: 24px;border-top-right-radius: 8px;border-bottom-left-radius: 0px;border-bottom-right-radius: 8px;width:fit-content;">
+                <p style=" font-size: 20px;margin-left: 21px;font-weight: 100;">
+                    <span style="font-size: 14px;color:yellow;font-family: monospace;">{{this.name}}</span><br>
+                    <span style="color:white;font-weight: 100;font-family: monospace;font-size:17px;">{{this.message}}&nbsp;&nbsp;</span>
+                    <span style="font-size: 11px;font-family: sans-serif;color: #987777;font-weight:bold;">{{this.time}}&nbsp;&nbsp;&nbsp;</span>
+                </p>
+            </div>
+        </h3>
+        {{/each}}
+        <h3 id="messageData"></h3>
+                <div style="text-align:center;">
+                <input type="text" id="input" placeholder="Message" name="message" style="width: 82%;height: 35px;border-radius: 12px;border-color: white;border-width: 0px;font-size: 20px;margin: 11px;">
+                <button onclick="sendMessage();sendMesgToDB();" type="submit"> <i class="fa-solid fa-2x fa-paper-plane" style="background-color:#3d3d3d;;margin-bottom: -3px;margin-top: -3px;margin-left: -8px;margin-right: -9px;color: white;"></i></button><br>
+               
+                </div>
+                   </div>
+    <script>
+        
+        var socket = io("https://freechatsite.herokuapp.com");
+        //var socket = io()
+        socket.on('connection')
+        socket.on("message", (namedata) => {
+            console.log("Message arrived:")
+            document.getElementById('messageData').innerHTML = document.getElementById('messageData').innerHTML +
+            `       <div style="background-color:black;border-top-left-radius: 24px;border-top-right-radius: 8px;border-bottom-left-radius: 0px;border-bottom-right-radius: 8px;width:fit-content;">
+                <p style=" font-size: 20px;margin-left: 21px;font-weight: 100;">
+                    <span style="font-size: 14px;color:yellow;font-family: monospace;">${namedata.name}</span><br>
+                    <span style="color:white;font-weight: 100;font-family: monospace;font-size: 17px;">${namedata.message}&nbsp;&nbsp;</span>
+                    <span style="font-size: 11px;font-family: sans-serif;color: #987777;font-weight:bold;">${namedata.time}&nbsp;&nbsp;&nbsp;</span>
+                </p>
+            </div>`
+            window.scrollTo(0, document.querySelector("#scrollDiv").scrollHeight)
+
+        })
+
+
+        const sendMessage = () => {
+            const messageInput = document.getElementById('input').value
+            document.getElementById('messageData').innerHTML = document.getElementById('messageData').innerHTML +
+            `       <div style="background-color:black;border-top-left-radius: 24px;border-top-right-radius: 8px;border-bottom-left-radius: 0px;border-bottom-right-radius: 8px;width:fit-content;">
+                <p style=" font-size: 20px;margin-left: 21px;font-weight: 100;">
+                    <span style="font-size: 14px;color:yellow;font-family: monospace;">{{name}}</span><br>
+                    <span style="color:white;font-weight: 100;font-family: monospace;font-size: 17px;">${messageInput}&nbsp;&nbsp;</span>
+                    <span style="font-size: 11px;font-family: sans-serif;color: #987777;font-weight:bold;">${new Date().toLocaleTimeString()}&nbsp;&nbsp;&nbsp;</span>
+                </p>
+            </div>`
+            socket.emit('message', { name: "{{name}}", message: messageInput, time: new Date().toLocaleTimeString() })
+            console.log('message send:')
+            window.scrollTo(0, document.querySelector("#scrollDiv").scrollHeight)
+        }
+
+        const sendMesgToDB = () => {
+            const messageInput = document.getElementById('input').value
+            console.log("message is", messageInput)
+            document.getElementById('input').value = ""
+            const name = "{{name}}"
+            var today = new Date()
+            var currTime = today.toLocaleTimeString()
+            $.ajax({
+                url: '/insertInToDb',
+                data: {
+                    message: messageInput,
+                    name: name,
+                    time: currTime
+                },
+                method: 'post',
+                success: (response) => {
+
+                }
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<div style="text-align:center;">
+    <a><br><br><br>
+        <button onclick="incriment(1)"  style="background: black;color: white;">+</button>
+    </a>
+
+    <span style="width: 22px;text-align: center;background: black;color: white;margin: 34px;"id="input">1</span>
+
+    <a>
+        <button onclick="incriment(-1)" style="background: black;color: white;">-</button>
+    </a>
+</div>
+
+
+
+<script>
+    function incriment(value) {
+     //   console.log(value)
+     //   alert("Function called")
+        $.ajax({
+            url: '/increase/'+value,
+            method: 'get',
+            success:(response)=>{
+            if(response.status){
+               let quantity=$("#input").html()
+               quantity=parseInt(quantity)+value
+               $("#input").html(quantity)
+                //alert("success")
+               // console.log(quantity)
+            }
+        }
+        })
+
+    }
+</script>

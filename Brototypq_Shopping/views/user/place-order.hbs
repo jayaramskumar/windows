@@ -1,0 +1,40 @@
+<section>
+    <div>
+        <form action="/place-order" method="post" id="checkout-form">
+            <div style="margin-left: 10%;}">
+                <h1>Enter Delivery Details</h1>
+                <label for="">Address</label>
+                <input type="text" name="address"><br><br>
+                <label for="">Pincdoe</label>
+                <input type="text" name="pincode"><br><br>
+                <label for="">Mobile</label>
+                <input type="text" name="mobile"><br><br>
+                <input type="hidden" name="userId" id="" value="{{user._id}}">
+            </div>
+            <div style="float:right;padding-right: 23%;">
+                <h3>Total Amount:Rs.{{total}}</h3>
+                <label>Payement method</label><br>
+                <label>COD</label>
+                <input type="radio" name="payment-method" value="COD"><br>
+                <label>Online Payement</label>
+                <input type="radio" name="payment-method" value="ONLINE"><br><br>
+                <button type="submit"  class="btn btn-success">Checkout</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{{!-- <script>
+    $("#checkout-form").submit((e)=>{
+        $.ajax({
+            url:'/place-order',
+            method:'post',
+            data:$('#checkout-form').serialize(),
+            success:(response)=>{
+                if(response.status){
+                    loation.href="/order-success"
+                }
+            }
+        })
+    })
+</script> --}}

@@ -1,0 +1,49 @@
+.upper1{
+    width: 211px;
+    height: 170px;
+    background-color: blue;
+    float: left;
+
+}
+
+.upper2{
+    width: 211px;
+    height: 95px;
+    background-color: brown;
+    padding-top: 75px;
+    float: left;
+    
+}
+
+
+
+
+.text{
+        margin-left: 285px;
+        color: blue;
+        font-size: 40px;
+        font-family: sans-serif;
+        background: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: left;
+    
+        
+}
+
+.video1{
+    width: 211px;
+    height: 170px;
+    background-color:#22c5b6;
+    float: right;
+    margin-right: 420px;    
+    
+}
+
+.vdotext{
+    margin-top: 186px;
+    margin-left: 55px;
+}
+
+body{
+    margin: 0px;
+}

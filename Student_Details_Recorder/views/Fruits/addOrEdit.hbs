@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+   
+</head>
+<body style="background-color:  #000000;;">
+     <h1 style="color: white;text-align: center;">Student Details</h1>
+     <h3 style="color: white;text-align: center;">{{Title}}</h3><br><br>
+     
+    <a href="/list" ><button style="background-color: #424e04;color: white;border-radius: 7px;border-color: #040000;width: 86px;height: 34px;margin-left:34%;">View All</button></a><br><br>
+    <div style="margin-left: 11%;">
+    <form action="/" method="POST">
+        <input type="hidden" name="_id" value="{{prevalue._id}}">
+        <label  style="color: white;">Fullname</label><br><br>
+        <input type="text" name="fullname" value="{{prevalue.fullname}}"><br><br>
+        <label style="color: white;">Email</label><br><br>
+        <input type="text" name="email" value="{{prevalue.email}}"><br><br>
+        <label style="color: white;">Mobile</label><br><br>
+        <input type="text" name="mobile" value="{{prevalue.mobile}}"><br><br>
+        <label style="color: white;">City</label><br><br>
+        <input type="text" name="City" value="{{prevalue.City}}"><br><br><br>
+        <button type="submit" style=" margin-left: 18% ;background-color: blue;color: white;border-color: blue;border-radius: 6px;height: 33px;width: 29%;">Submit</button>
+    </form>
+    </div>
+
+ 
+   
+    
+
+</body>
+</html>

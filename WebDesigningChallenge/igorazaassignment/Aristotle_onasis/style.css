@@ -1,0 +1,42 @@
+.maindiv{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #c4e4e1;
+    text-align: center;
+}
+.Aristotle{
+   text-align: center;
+}
+
+.most{
+    background-color: #7ecac6;
+    width: 81%;
+    height: 32px;
+    margin-left: 10%;
+    margin-top: -20px;
+  
+}
+
+.wanted{
+    margin-left: 520px;
+    font-size: 60px;
+    margin-top: 10px;
+    color: red;
+    margin-top: -497px;
+}
+
+.image{
+    width: 284px;
+    border-radius: 50%;
+    height: 316px;
+}
+
+.kochimage{
+    margin-left: 58px;
+    border-radius: 50%;
+    width: 448px;
+}
+
+
+
+ 

@@ -1,0 +1,28 @@
+.author{
+  margin-left: 80%;
+}
+
+.button{
+  margin-left: 32%;
+  margin-top: 10%;
+  width: 28%;
+  height: 43px;
+  border-width: 1px;
+  border-color: #50dcd6;
+  border-right-color: #50dcd6;
+  border-bottom-color: #50dcd6;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.QuotesDiv{
+  background: #ffffff;
+  padding: 5%;
+  border-radius: 4%;
+  margin: 6%;
+}
+
+.AuthorDiv{
+  margin-right: 20%;
+}
+

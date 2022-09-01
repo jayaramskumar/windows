@@ -1,0 +1,355 @@
+document.getElementById('Myname').innerHTML = "Gowri"
+document.getElementsByClassName('Myname')[0].innerHTML = "appu"
+document.getElementsByTagName('h1')[2].innerHTML = 'omicron'
+
+THERE ARE MANY CLAASES BUT A UNIQUE ID
+
+ document.getElementById('Myname').style.color = "red"
+document.getElementById('Myname').style.fontSize = "40px"
+
+ console.log(typeof name)
+ GIVES THE TYPE OF VARIABLE
+
+
+ comment ctrl + /
+
+ let a = 10
+ let b = "10"
+console.log(a===b)
+CHECKS THE VALUE AND ALSO TYPE
+
+let a = 10
+let b = 20
+let value = true
+console.log(a<8 || b<18)
+console.log(a<8 && b<18)
+console.log(!value)
+
+let a = 10
+let b = 10
+let x = a==b ? true : false
+console.log(x)
+
+? --- IF
+: --- ELSE
+
+ myFunc = c => c;
+console.log(myFunc(10))
+
+ARROW FUNCTION WITH ONE LINE
+
+string.length -- It starts from one counts whitespace also
+string.indexOf['A'] -- starts from 0. Gives index of A.  if not returns -1 if yes returns 0
+lastIndexOf("A") -- returns index of last A
+
+let a = 'Jayaram s kumar'
+let b  = a.slice(0,9) -- index value
+let c = a.slice(-1) -- returns last letter
+
+let myArray = ["A","B","C"]
+myArray.push("D') --- adds to last
+myArray.pop() --- removes from last if no value is GIVEN
+myArray.unshift --- adds to first
+myArray.shift() --- removes from first if no value is given
+myArray.splice(0,1) --- removes element from 0 th index to 1st index
+myArray.splice(2,0,"p","q")--- adds p and q after 2nd index
+
+let newArray = myArray.slice(1) -- creates a newArray and elements from 1st index of myArray
+
+myArray.sort() --- sorts all elements in alphabetical order
+myArray.reverse() --- reverse all elements
+
+parseInt(a)  converts a to integer
+b.toString converts b to string
+
+delete myobj.lastName --- for deleting a key
+
+for of loop -- here no need to take the lenght of array
+
+ let name = ["jayaram","maheen","manu"]
+for(let i of name){
+document.write(i + "<br>")
+
+<button onclick="clicked()">click</button>
+__________
+function clicked(){
+alert("You have clicked")
+}
+
+addEventListener("click",function(){
+    alert("clicked")
+})
+
+ const student = {
+     name:"akash",
+     age:20,
+     college:"cemp"
+ }
+ 
+  SPREAD OPERATOR
+ const jayaram  = {...student} --- makes an object of student otherwise the value of student also changes with change in jayaram
+ jayaram.age = 40
+ console.log(student)
+
+ STRING AND INTEGER ARE IMMUTABLE--once a value is assigned it cannot be changed. BUT ARRAY AND OBJECT ARE MUTABLE
+
+  const item = fruits.concat(vegetables)
+  [ 'apple', 'orange', 'grapes', 'banana' ]
+ const item  = [...fruits,vegetables]
+ [ 'apple', 'orange', 'grapes', [ 'tomato', 'brinjal' ], 'banana' ]
+
+ let item  = [...item,"banana"]
+ ADDS BANANA TO ITEM
+
+
+const fruits = ["apple","orange","grapes"]
+const[first,second,third]=fruits
+console.log(first)
+console.log(second)
+console.log(third)
+
+GIVES THE fruits
+
+const student =  {
+    name:"man",
+    age:66,
+    college:"cemp"
+}
+
+const {name,...rest} = student
+console.log(name)
+console.log(rest) -- gives the rest of the DICTIONARY after name
+
+
+const student =  [{
+    name:"man",
+    age:66,
+    college:"cemp"
+},
+{
+    bon:"man",
+    san:66,
+    ton:"cemp"
+},
+{
+    pac:"man",
+    mac:66,
+    chak:"cemp"
+}]
+
+student.forEach((value,index,array,)=>console.log(value.pac)) --        GIVES SPECIFIC VALUE OF GIVEN KEY
+student.forEach((value,index,array,)=>console.log(index)) --- GIVES INDEX OF SUB ARRAY
+student.forEach((value,index,array,)=>console.log(array)) --- GIVES ENTIRE ARRAY
+
+ console.log(student.map(val=>val.age))
+
+  console.log(student.map((val,ind,array)=>{
+   return array
+ }))
+
+ MAP TAKES THREEE ARGUMENTS
+
+ const newArray = student.filter(val=>val.college=="cemp")
+const newArray = student.filter((val,ind,Array)=>val.age == 66 || val.pac=="man")
+console.log(newArray)
+
+const Array = [1,2,3,4,5,6,7,8,9]
+const sum = Array.reduce((start,value,index,Array)=>start = start + value,0)
+console.log(sum)
+
+const Array = [1,2,3,4,5,6,7,8,9]
+const sorteArray = Array.sort((a,b)=>b-a)
+console.log(sorteArray)
+
+a-b ASCENDING
+b-a DESCENDING
+
+const Array = [1,[2,[3,[4,[5],6],7],8],9]
+const sorteArray = Array.flat(Infinity)
+console.log(sorteArray)
+
+[
+  1, 2, 3, 4, 5,
+  6, 7, 8, 9
+]
+
+ const dict = {universe:{world:'india'}}
+ if(dict?.universe?.world)
+ console.log(dict.universe.world)
+
+   console.log(Array.filter(val=>val>5).reduce((total,val)=>total=total+val))
+  console.log(Array.filter(val=>val>5).sort((a,b)=>a-b))
+
+
+
+
+console.log("start")
+ function myfunction(){
+    setTimeout(()=>{
+       return("return")
+    },3000)
+}
+console.log("stop")
+
+start
+stop
+
+----THIS DON'T RETURN JAYARAM.BECAUSEE THE FUNCTION myfunction IS CALLED AND ADDED IN TO STACK.
+BUT AT THAT MOMENT IT HAS NO VALUE TO RETURN.----
+
+TO SOLVE THIS ISSSUE CALLBACK IS INTRODUCED
+
+function myfunction(callback){
+    setTimeout(()=>{
+       callback("Jayaram")
+    },3000)
+}
+
+console.log("start")
+myfunction((value)=>{
+    console.log(value)
+})
+console.log("stop")
+
+start
+stop
+Jayaram
+
+
+
+console.log("start")
+
+function getDataFromApi1(callback){
+    setTimeout(()=>{
+        callback(5)
+    },1000)
+}
+
+function getDataFromApi2(callback){
+    setTimeout(()=>{
+        callback(5)
+    },1000)
+}
+
+function getDataFromApi3(callback){
+    setTimeout(()=>{
+        callback(5)
+    },1000)
+}
+
+getDataFromApi1((Api1val)=>{
+    getDataFromApi2((Apival2)=>{
+        getDataFromApi3((Apival3)=>{
+            console.log(Api1val+Apival2+Apival3)
+        })
+    })
+})
+
+console.log("stop")
+
+
+function myfunction(){
+    setTimeout(()=>{
+       return("return")
+    },3000)
+}
+
+ CALLBACK HELL
+
+  const promise = new Promise((resolve,reject)=>{
+     reject("Failed")
+ })
+
+ promise.then((response)=>{
+     console.log(response)
+ }).catch((error)=>{
+    console.log(error)
+})
+
+
+-------------PROMISE-----------
+
+ function getDataFromApi1(num){
+     return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+          // resolve(num)
+          reject("failed")
+        },1000)
+     })
+ }
+
+ function getDataFromApi2(num){
+    return new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+          // resolve(num)
+          reject("failed")
+       },1000)
+    })
+}
+
+getDataFromApi1(5)
+.then((response)=>{
+   return getDataFromApi2(response+5)
+})
+.then((response)=>{
+    console.log(response)
+})
+.catch((error)=>{
+    console.log(error)
+})
+
+
+---------PROMISE.ALL--------
+
+ const promise1 = new Promise((resolve,reject)=>{
+     resolve(["apple","orange"])
+ })
+
+ const promise2 = new Promise((resolve,reject)=>{
+    //resolve(["banana","grape"])
+    reject("failed")
+})
+
+const newpromise = Promise.all([promise1,promise2])
+
+newpromise.then((res)=>{
+    console.log(res.flat(Infinity))
+}).catch((error)=>{
+    console.log(error)
+})
+
+-----------ALLSETTLED---------
+
+const newpromise = Promise.allSettled([promise1,promise2])
+
+  { status: 'fulfilled', value: [ 'apple', 'orange' ] },
+  { status: 'rejected', reason: 'failed' }
+
+  --------ANY---------
+
+  const newpromise = Promise.any([promise1,promise2])
+  RETURNS A SINGLE PROMISE.IF ALL PROMISES WERE REJECTED [AggregateError: All promises were rejected]
+
+  ----RACE----
+
+  const newpromise = Promise.race([promise1,promise2])
+  RETURNS FIRST PROMISE ONLY EVEN IF IT IS REJECT OR RESOLVE
+
+  ----async -- await---
+
+   const promise1 = new Promise((resolve,reject)=>{
+    //  resolve(["apple","orange"])
+     reject("failed")
+
+ })
+
+    const data = async ()=>{
+    try{
+        const response = await promise1
+        console.log(response)
+    }catch(err){
+        console.log(err)
+    }
+}
+
+data()
